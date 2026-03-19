@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "my_ec2_instance" {
     ami = "ami-05d2d839d4f73aafb"
-    instance_type = "t3.micro"
+    instance_type = "t3.small"
     key_name = "dell"
     vpc_security_group_ids = ["sg-0843a7cb09cfe1125"]
     tags = {
